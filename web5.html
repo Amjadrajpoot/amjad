@@ -1,0 +1,1365 @@
+<html>
+<head>
+<tittle></tittle>
+</head>
+<style>
+
+
+.main{
+background-color:white;
+width:100%;
+height:400%;
+
+
+}
+.navbar {
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+span.Time { color: black;
+}
+
+span.Zone { color: red;
+}
+
+
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff2020;
+}
+
+/* DROPDOWN STYLING */
+
+.dropdown-menu {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #fff;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    border: 1px solid #ff2020;   
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;  
+    transition: 0.3s;
+}
+
+/* Hover effect inside dropdown */
+
+.dropdown-menu li:hover {
+    background-color: #ff2020;
+}
+
+.dropdown-menu li:hover a {
+    color: #fff;
+    padding-left: 5px;
+}
+
+/* Show dropdown on hover */
+
+.nav-item:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+
+
+
+.one{
+background-color:gray;
+width:1570px;
+height:500px;
+}
+
+.text{ 
+position:absolute;
+background-color:transparent;
+font-family:Arial Black;
+top:150px;
+left:580px;
+color:black;
+font-size:30px;
+height:90px;
+width:400px;
+}
+
+
+.two{
+background-color:transparent;
+position:absolute;
+width:905px;
+height:600px;
+top:600px;
+left:100px;
+
+}
+
+.two img{
+width:905px;
+height:400px;
+}
+
+.three{
+position:absolute;
+font-family:Arial Unicode MS;
+top:420px;
+left:27px;
+font-size:13px;
+}
+
+.three:hover{
+ color:red;
+text-decoration:none;
+}
+
+
+.four{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:510px;
+left:27spx;
+}
+
+
+.five{
+background-color:gray;
+width:8px;
+height:100px;
+position:absolute;
+top:1550px;
+left:80px;
+}
+
+.six{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:1535px;
+left:90px;
+}
+
+
+.seven{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:1735px;
+left:90px;
+}
+
+
+.eight{
+background-color:red;
+position:absolute;
+width:100px;
+height:100px;
+border-radius:100px;
+left:90px;
+top:2100px;
+}
+
+
+.eight img{
+width:100px;
+height:100px;
+}
+
+
+.nine{
+position:absolute;
+font-family:Arial Black;
+top:2080px;
+left:220px;
+font-size:13px;
+}
+
+.nine:hover{
+color:red;
+}
+
+.ten{
+position:absolute;
+font-family:Arial Unicode MS;
+top:2150px;
+left:220px;
+font-size:11px;
+}
+
+
+.eleven{
+background-color:red;
+position:absolute;
+width:100px;
+height:100px;
+border-radius:100px;
+left:90px;
+top:2400px;
+}
+
+
+.eleven img{
+width:100px;
+height:100px;
+}
+
+
+.twelve{
+position:absolute;
+font-family:Arial Unicode MS;
+top:2420px;
+left:220px;
+font-size:12px;
+}
+
+
+.thirteen{
+background-color:red;
+position:absolute;
+width:100px;
+height:100px;
+border-radius:100px;
+left:90px;
+top:2600px;
+}
+
+
+.thirteen img{
+width:100px;
+height:100px;
+}
+
+
+.fourteen{
+position:absolute;
+font-family:Arial Unicode MS;
+top:2620px;
+left:220px;
+font-size:12px;
+}
+
+
+.fifteen{
+background-color:red;
+position:absolute;
+width:100px;
+height:100px;
+border-radius:100px;
+left:90px;
+top:2800px;
+}
+
+
+.fifteen img{
+width:100px;
+height:100px;
+}
+
+.sixteen{
+position:absolute;
+font-family:Arial Unicode MS;
+top:2820px;
+left:220px;
+font-size:12px;
+}
+
+
+.seventeen{
+position:absolute;
+font-family:Arial Black;
+top:3000px;
+left:80px;
+font-size:10px;
+}
+
+
+
+
+.twentyone1{
+background-color:gray;
+height:200px;
+width:400px;
+position:absolute;
+top:600px;
+left:1100px;
+}
+
+
+.twentyone1 input{
+height:50px;
+width:250px;
+margin-left:40px;
+margin-top:40px;
+outline:none;
+font-size:20px;
+}
+
+.twentyone1 button{
+background-color:red;
+position:absolute;
+top:39px;
+width:55px;
+height:52px;
+}
+
+.iconboot{
+font-size:30px;
+}
+
+
+
+#btn{
+            width:310px;
+			height:40px;
+			color:white;
+			background:red;
+			margin-top:80px;
+			margin-left:-250px;
+			border:none;
+			font-size:20px;
+        }
+#btn:hover{
+           cursor: pointer;
+           background-color:white;
+			color:black;
+		   
+		   }
+
+
+.twentythree{
+background-color:red;
+width:400px;
+height:450px;
+right:130px;
+top:900px;
+position:absolute;
+}
+
+
+.twentyfour{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:5px;
+left:10px;
+}
+
+
+.Classday{
+width:400px;
+position:absolute;
+top:60px;
+}
+
+
+.twentyfive{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:80px;
+left:10px;
+}
+
+.Classday2{
+width:400px;
+position:absolute;
+top:130px;
+}
+
+.twentysix{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:135px;
+left:10px;
+}
+
+.Classday3{
+width:400px;
+position:absolute;
+top:190px;
+}
+
+
+.twentyseven{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:195px;
+left:10px;
+}
+
+.Classday4{
+width:400px;
+position:absolute;
+top:250px;
+}
+
+
+.twentyeight{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:255px;
+left:10px;
+}
+
+.Classday5{
+width:400px;
+position:absolute;
+top:310px;
+}
+
+
+.twentynine{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:326px;
+left:10px;
+}
+
+.Classday6{
+width:400px;
+position:absolute;
+top:370px;
+}
+
+
+.thirty{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:375px;
+left:10px;
+}
+
+
+.thirtyone{
+background-color: #B5B1B1;
+width:400px;
+height:680px;
+right:130px;
+top:1500px;
+position:absolute;
+}
+
+
+.thirtytwo{
+font-family:Arial Black;
+font-size:12px;
+position:absolute;
+top:5px;
+left:10px;
+}
+
+.Classday7{
+width:400px;
+position:absolute;
+top:60px;
+}
+
+
+.thirtythree{
+background:white;
+width:100px;
+height:50px;
+top:110px;
+left:10px;
+position:absolute;
+}
+
+.thirtythree:hover{
+background:red;
+color:white;
+cursor: pointer;
+}
+
+
+.thirtyfour{
+background:white;
+width:100px;
+height:50px;
+top:110px;
+left:140px;
+position:absolute;
+}
+
+.thirtyfour:hover{
+background:red;
+color:white;
+cursor: pointer;
+}
+
+.thirtyfive{
+background:white;
+width:110px;
+height:50px;
+top:110px;
+left:270px;
+position:absolute;
+}
+
+.thirtyfive:hover{
+background:red;
+color:white;
+cursor: pointer;
+}
+
+
+.thirtysix{
+background:white;
+width:110px;
+height:50px;
+top:190px;
+left:10px;
+position:absolute;
+}
+
+.thirtysix:hover{
+background:red;
+color:white;
+cursor: pointer;
+}
+
+
+.thirtyseven{
+background:white;
+width:110px;
+height:50px;
+top:190px;
+left:140px;
+position:absolute;
+}
+
+.thirtyseven:hover{
+background:red;
+color:white;
+cursor: pointer;
+}
+
+.thirtyeight{
+background:white;
+width:110px;
+height:50px;
+top:190px;
+left:270px;
+position:absolute;
+}
+
+.thirtyeight:hover{
+background:red;
+color:white;
+cursor: pointer;
+}
+
+
+.thirtynine{
+font-family:Arial Black;
+font-size:12px;
+position:absolute;
+top:300px;
+left:10px;
+}
+
+
+.Classday10{
+width:400px;
+position:absolute;
+top:350px;
+}
+
+
+.forty{
+top:400px;
+left:20px;
+position:absolute;
+}
+
+.forty img{
+width:auto;
+height:auto;
+}
+
+.fortyone{
+top:400px;
+left:160px;
+position:absolute;
+}
+
+.fortyone img{
+width:auto;
+height:auto;
+}
+
+
+.fortytwo{
+top:400px;
+left:290px;
+position:absolute;
+}
+
+.fortytwo img{
+width:auto;
+height:auto;
+}
+
+
+.fortythree{
+top:530px;
+left:20px;
+position:absolute;
+}
+
+.fortythree img{
+width:auto;
+height:auto;
+}
+
+
+.fortyfour{
+top:530px;
+left:160px;
+position:absolute;
+}
+
+.fortyfour img{
+width:auto;
+height:auto;
+}
+
+
+.fortyfive{
+top:530px;
+left:290px;
+position:absolute;
+}
+
+.fortyfive img{
+width:auto;
+height:auto;
+}
+
+
+.fortysix{
+background:gray;
+width:400px;
+height:250px;
+top:2500px;
+right:130px;
+position:absolute;
+}
+
+
+.fortyseven{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:5px;
+left:10px;
+}
+
+.Classday15{
+width:400px;
+position:absolute;
+top:60px;
+}
+
+
+.fortyeight2 input{
+height:50px;
+width:250px;
+margin-left:70px;
+margin-top:100px;
+outline:none;
+font-size:20px;
+}
+
+
+
+.fortyeight2 button{
+background-color:red;
+position:absolute;
+top:10px;
+width:55px;
+height:62px;
+}
+
+
+#btn2{
+            width:310px;
+			height:40px;
+			color:white;
+			background:red;
+			margin-top:180px;
+			margin-left:-290px;
+			border:none;
+			font-size:20px;
+        }
+#btn2:hover{
+           cursor: pointer;
+           background-color:white;
+			color:black;
+		   
+		   }
+
+
+.fifty{
+font-size:20px;
+width:auto;
+height:auto;
+top:3100px;
+left:100px;
+position:absolute;
+}
+
+.fifty textarea{width:900px;
+height:200px;}
+
+.t1 {
+width:400px;
+height:50px;
+}
+
+
+.t2{
+width:700px;
+height:50px;
+
+}
+
+
+#btn3{
+width:300px;
+height:50px;
+position:absolute;
+background-color:red;
+left:100px;
+font-size:19px;
+}
+		   
+#btn3:hover{
+background-color:white;}		   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sixty{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+	position:absolute;
+	top:3700px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+	
+}
+
+span.Time { color: black;
+}
+
+span.Zone { color: red;
+}
+
+
+.sixtyone{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:3750px;
+left:50px;
+}
+
+.sixtytwo{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:3700px;
+left:480px;
+background-color:white;
+height:300px;
+}
+
+.sixtytwo ul{
+
+}
+
+.sixtytwo ul li{
+list-style-type:none;
+
+}
+
+.sixtytwo ul li a{
+text-decoration:none;
+color:Black;
+font-size:15px;
+}
+
+.sixtytwo ul li a:hover{
+color:red;
+margin-left:5px;
+transition:1s;
+}
+
+
+.sixtythree{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:3700px;
+left:790px;
+background-color:white;
+height:300px;
+}
+
+.sixtythree ul{
+
+}
+
+.sixtythree ul li{
+list-style-type:none;
+
+}
+
+.sixtythree ul li a{
+text-decoration:none;
+color:Black;
+font-size:15px;
+}
+
+.sixtythree ul li a:hover{
+color:red;
+margin-left:5px;
+transition:1s;
+}
+
+
+.sixtyfour{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:3700px;
+left:1160px;
+background-color:white;
+height:300px;
+}
+
+.sixtyfour ul{
+
+}
+
+.sixtyfour ul li{
+list-style-type:none;
+
+}
+
+.sixtyfour ul li a{
+text-decoration:none;
+color:Black;
+font-size:15px;
+}
+
+.sixtyfour ul li a:hover{
+color:red;
+margin-left:5px;
+transition:1s;
+}
+
+
+</style>
+<body>
+
+
+<div class=main>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#" class="logo">
+		<span class="Time">Time</span><span class="Zone">Zone</span>
+		</a>
+
+        <ul class="nav-menu">
+
+            <li class="nav-item">
+                <a href="5-copy(4).html" class="nav-link">Home</a>
+                
+            </li>
+
+            <li class="nav-item">
+                <a href="web time zone.html" class="nav-link">Shop</a>
+                
+            </li>
+
+            <li class="nav-item">
+                <a href="web3.html" class="nav-link">About</a>
+                
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">Blog</a>
+                <ul class="dropdown-menu">
+                    <li><a href="web4.html">Blog </a></li>
+                    <li><a href="web5.html">Blog Details</a></li>
+                    
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a href="web6.html" class="nav-link">Contact</a>
+               
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+
+
+
+<div class="one">
+<div class="text"><h1><center>Blog Details</center></h1></div></div>
+
+
+<div class="two">
+<img src="...5.png"/>
+
+<div class="three">
+<h1>Second divided from form fish beast made every of seas all gathered us saying he our</h1></div>
+
+<div class="four">
+<h2>MCSE boot camps have its supporters and its detractors. Some people do not understand why you<br> should have to spend money on boot camp when you can get the MCSE study materials yourself at a<br> fraction of the camp price. However, who has the willpower.<br><br><br><br>MCSE boot camps have its supporters and its detractors. Some people do not understand why<br> you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction <br>of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training.<br> who has the willpower to actually</h2></div>
+
+</div>
+
+<div class="five"></div>
+
+<div class="six">
+<h2>MCSE boot camps have its supporters and its detractors. Some people do not understand why<br> you should have to spend money on boot camp when you can get the MCSE study materials<br> yourself at a fraction of the camp price. However, who has<br> the willpower to actually sit through a self-imposed MCSE training.</h2></div>
+
+
+<div class="seven">
+<h2>MCSE boot camps have its supporters and its detractors. Some people do not<br> understand why you should have to spend money on boot camp when you can get<br> the MCSE study materials yourself at a fraction of the camp price. However, who has the willpowe<br><br><br>MCSE boot camps have its supporters and its detractors. Some people do not <br>understand why you should have to spend money on boot camp when you can get the MCSE study materials<br> yourself at a fraction of the camp price. However, who has the willpower to actually sit<br> through a self-imposed MCSE training. who has the willpower to actually</h2></div>
+
+
+<div class="eight">
+<img src="n1.png"/></div>
+
+
+
+<div class="nine">
+<h1>Harvard milan</h1></div>
+
+
+<div class="ten">
+<h2>Second divided from form fish beast made. Every of seas all gathered use saying<br> you're, he our dominion twon Second divided from</h2></div>
+
+
+<div class="eleven">
+<img src="n2.png"/></div>
+
+<div class="twelve">
+<h2>Multiply sea night grass fourth day sea lesser rule open subdue female fill which them Blessed, give fill lesser bearing<br> multiply sea night grass fourth day sea lesser</h2></div>
+
+
+<div class="thirteen">
+<img src="n4.png"/></div>
+
+
+<div class="fourteen">
+<h2>Multiply sea night grass fourth day sea lesser rule open subdue <br>female fill which them Blessed, give fill<br> lesser bearing multiply sea night grass fourth day sea lesser</h2></div>
+
+
+<div class="fifteen">
+<img src="n5.png"/></div>
+
+
+<div class="sixteen">
+<h2>Multiply sea night grass fourth day sea lesser rule open subdue female fill which them Blessed, give fill lesser bearing<br> multiply sea night grass fourth day sea lesser</h2></div>
+
+
+<div class="seventeen">
+<h1>Leave a Reply</h1></div>
+
+
+
+<div class="twentyone1">
+<input type="text" placeholder="Search Keyboard"/>
+<button><i class="bi bi-search iconboot"></i></button>
+
+
+
+<button id="btn">Search</button>
+
+</div>
+
+
+<div class="twentythree">
+
+<div class="twentyfour">
+<h1>Category</h1>
+</div>
+
+
+<hr class="Classday"></hr>
+
+<div class="twentyfive">
+<h2>Resaurant food(37)</h2></div>
+
+<hr class="Classday2"></hr>
+
+<div class="twentysix">
+<h2>Travel news(10)</h2></div>
+
+<hr class="Classday3"></hr>
+
+<div class="twentyseven">
+<h2>Modern technology(03)</h2></div>
+
+<hr class="Classday4"></hr>
+
+
+<div class="twentyeight">
+<h2>Product(11)</h2></div>
+
+<hr class="Classday5"></hr>
+
+
+<div class="twentynine">
+<h2>Inspiration21</h2></div>
+
+<hr class="Classday6"></hr>
+
+<div class="thirty">
+<h2>Health Care (21)09</h2></div>
+
+
+</div>
+
+
+<div class="thirtyone">
+
+<div class="thirtytwo">
+<h1>Tag Clouds</h1></div>
+
+<hr class="Classday7"></hr>
+
+<div class="thirtythree">
+<h2>project</h2></div>
+
+
+<div class="thirtyfour">
+<h2>love</h2></div>
+
+
+<div class="thirtyfive">
+<h2>technology</h2></div>
+
+<div class="thirtysix">
+<h2>travel</h2></div>
+
+<div class="thirtyseven">
+<h2>restaurant</h2></div>
+
+
+<div class="thirtyeight">
+<h2>life style</h2></div>
+
+
+<div class="thirtynine">
+<h1>Instagram Feeds</h1></div>
+
+<hr class="Classday10"></hr>
+
+<div class="forty">
+<img src="j1.png"/></div>
+
+
+<div class="fortyone">
+<img src="j2.png"/></div>
+
+<div class="fortytwo">
+<img src="j4.png"/></div>
+
+<div class="fortythree">
+<img src="j5.png"/></div>
+
+
+<div class="fortyfour">
+<img src="j6.png"/></div>
+
+<div class="fortyfive">
+<img src="j7.png"/></div>
+
+
+</div>
+
+
+<div class="fortysix">
+<div class="fortyseven">
+<h1>Newsletter</h1></div>
+
+<hr class="Classday15"></hr>
+
+
+<div class="fortyeight2">
+<input type="text" placeholder="Enter Email"/>
+
+
+<button id="btn2">SUBSCRIBE</button>
+
+</div>
+
+
+</div>
+
+<div class="fifty">
+<textarea cols="20" rows="20" placeholder="Write Comment">
+</textarea>
+
+<p>
+<input class="t1" type="text" placeholder="Enter your name"/>
+<input class="t1" type="text" placeholder="Enter your Email"/>
+</p>
+
+<input class="t2" type="text" placeholder="Enter your Website"/>
+<br>
+<p>
+<button id="btn3">Send Message</button>
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sixty">
+<a href="#" class="logo">
+<span class="Time">Time</span><span class="Zone">Zone</span>
+</a>
+</div>
+
+<div class="sixtyone">
+<h2>Asorem ipsum adipolor sdit amet,<br> consectetur adipisicing elitcf<br> sed do eiusmod tem</h2></div>
+
+
+<div class="sixtytwo">
+<h1>Quick Links</h1>
+
+<ul>
+<li><a href="#">About</a></li>
+<li><a href="#">Offers & Discounts</a></li>
+<li><a href="#">Get Coupon</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul></div>
+
+
+<div class="sixtythree">
+<h1>New Products</h1>
+
+<ul>
+<li><a href="#">Woman Cloth</a></li>
+<li><a href="#">Fashion Accessories</a></li>
+<li><a href="#">Man Accessories</a></li>
+<li><a href="#">Rubber made Toys</a></li>
+</ul></div>
+
+
+<div class="sixtyfour">
+<h1>Support</h1>
+
+<ul>
+<li><a href="#">Frequently Asked Questions</a></li>
+<li><a href="#">Terms & Conditions</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Report a Payment Issue</a></li>
+</ul></div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,1212 @@
+<html>
+<head>
+<tittle></tittle>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+
+<style>
+
+
+.main{
+background-color:white;
+width:100%;
+height:400%;
+
+
+}
+.navbar {
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+span.Time { color: black;
+}
+
+span.Zone { color: red;
+}
+
+
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff2020;
+}
+
+/* DROPDOWN STYLING */
+
+.dropdown-menu {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #fff;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    border: 1px solid #ff2020;   
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;  
+    transition: 0.3s;
+}
+
+/* Hover effect inside dropdown */
+
+.dropdown-menu li:hover {
+    background-color: #ff2020;
+}
+
+.dropdown-menu li:hover a {
+    color: #fff;
+    padding-left: 5px;
+}
+
+/* Show dropdown on hover */
+
+.nav-item:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+.one{
+background-color:gray;
+width:1570px;
+height:500px;
+}
+
+.text{ 
+position:absolute;
+background-color:transparent;
+font-family:Arial Black;
+top:150px;
+left:580px;
+color:black;
+font-size:30px;
+height:90px;
+width:400px;
+}
+
+.two{
+background-color:transparent;
+position:absolute;
+width:905px;
+height:600px;
+top:600px;
+left:100px;
+
+}
+
+.two img{
+width:905px;
+height:400px;
+}
+
+.three{
+position:absolute;
+font-family:Arial Unicode MS;
+top:420px;
+left:27px;
+font-size:13px;
+}
+
+.three:hover{
+ color:red;
+text-decoration:none;
+}
+
+
+.four{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:470px;
+left:27spx;
+}
+
+
+.five{
+background-color:transparent;
+position:absolute;
+width:905px;
+height:600px;
+top:1250px;
+left:100px;
+
+}
+
+.five img{
+width:905px;
+height:400px;
+}
+
+
+.six{
+position:absolute;
+font-family:Arial Unicode MS;
+top:420px;
+left:27px;
+font-size:13px;
+}
+
+.six:hover{
+ color:red;
+text-decoration:none;
+}
+
+
+.seven{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:470px;
+left:27spx;
+}
+
+
+.eight{
+background-color:transparent;
+position:absolute;
+width:905px;
+height:600px;
+top:1900px;
+left:100px;
+
+}
+
+.eight img{
+width:905px;
+height:400px;
+}
+
+
+.nine{
+position:absolute;
+font-family:Arial Unicode MS;
+top:420px;
+left:27px;
+font-size:13px;
+}
+
+.nine:hover{
+ color:red;
+text-decoration:none;
+}
+
+
+.ten{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:470px;
+left:27spx;
+}
+
+
+.eleven{
+background-color:transparent;
+position:absolute;
+width:905px;
+height:600px;
+top:2550px;
+left:100px;
+
+}
+
+.eleven img{
+width:905px;
+height:400px;
+}
+
+
+.twelve{
+position:absolute;
+font-family:Arial Unicode MS;
+top:420px;
+left:27px;
+font-size:13px;
+}
+
+.twelve:hover{
+ color:red;
+text-decoration:none;
+}
+
+
+.thirteen{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:470px;
+left:27px;
+}
+
+
+.fourteen{
+background-color:transparent;
+position:absolute;
+width:905px;
+height:600px;
+top:3230px;
+left:100px;
+
+}
+
+.fourteen img{
+width:905px;
+height:400px;
+}
+
+
+.fifteen{
+position:absolute;
+font-family:Arial Unicode MS;
+top:420px;
+left:27px;
+font-size:13px;
+}
+
+.fifteen:hover{
+ color:red;
+text-decoration:none;
+}
+
+
+.sixteen{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:470px;
+left:27px;
+}
+
+
+.seventeen{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+	position:absolute;
+	top:4100px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+	
+}
+
+span.Time { color: black;
+}
+
+span.Zone { color: red;
+}
+
+
+.eighteen{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:4150px;
+left:50px;
+}
+
+.nineteen{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:4100px;
+left:480px;
+background-color:white;
+height:300px;
+}
+
+.nineteen ul{
+
+}
+
+.nineteen ul li{
+list-style-type:none;
+
+}
+
+.nineteen ul li a{
+text-decoration:none;
+color:Black;
+font-size:15px;
+}
+
+.nineteen ul li a:hover{
+color:red;
+margin-left:5px;
+transition:1s;
+}
+
+
+.twenty{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:4100px;
+left:790px;
+background-color:white;
+height:300px;
+}
+
+.twenty ul{
+
+}
+
+.twenty ul li{
+list-style-type:none;
+
+}
+
+.twenty ul li a{
+text-decoration:none;
+color:Black;
+font-size:15px;
+}
+
+.twenty ul li a:hover{
+color:red;
+margin-left:5px;
+transition:1s;
+}
+
+
+.twentyone{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:4100px;
+left:1160px;
+background-color:white;
+height:300px;
+}
+
+.twentyone ul{
+
+}
+
+.twentyone ul li{
+list-style-type:none;
+
+}
+
+.twentyone ul li a{
+text-decoration:none;
+color:Black;
+font-size:15px;
+}
+
+.twentyone ul li a:hover{
+color:red;
+margin-left:5px;
+transition:1s;
+}
+.twentyone1{
+background-color:gray;
+height:200px;
+width:400px;
+position:absolute;
+top:600px;
+left:1100px;
+}
+
+
+.twentyone1 input{
+height:50px;
+width:250px;
+margin-left:40px;
+margin-top:40px;
+outline:none;
+font-size:20px;
+}
+
+.twentyone1 button{
+background-color:red;
+position:absolute;
+top:39px;
+width:55px;
+height:52px;
+}
+
+.iconboot{
+font-size:30px;
+}
+
+
+
+#btn{
+            width:310px;
+			height:40px;
+			color:white;
+			background:red;
+			margin-top:80px;
+			margin-left:-250px;
+			border:none;
+			font-size:20px;
+        }
+#btn:hover{
+           cursor: pointer;
+           background-color:white;
+			color:black;
+		   
+		   }
+
+
+.twentythree{
+background-color:red;
+width:400px;
+height:450px;
+right:230px;
+top:900px;
+position:absolute;
+}
+
+
+.twentyfour{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:5px;
+left:10px;
+}
+
+
+.Classday{
+width:400px;
+position:absolute;
+top:60px;
+}
+
+
+.twentyfive{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:80px;
+left:10px;
+}
+
+.Classday2{
+width:400px;
+position:absolute;
+top:130px;
+}
+
+.twentysix{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:135px;
+left:10px;
+}
+
+.Classday3{
+width:400px;
+position:absolute;
+top:190px;
+}
+
+
+.twentyseven{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:195px;
+left:10px;
+}
+
+.Classday4{
+width:400px;
+position:absolute;
+top:250px;
+}
+
+
+.twentyeight{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:255px;
+left:10px;
+}
+
+.Classday5{
+width:400px;
+position:absolute;
+top:310px;
+}
+
+
+.twentynine{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:326px;
+left:10px;
+}
+
+.Classday6{
+width:400px;
+position:absolute;
+top:370px;
+}
+
+
+.thirty{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:375px;
+left:10px;
+}
+
+
+.thirtyone{
+background-color: #B5B1B1;
+width:400px;
+height:680px;
+right:230px;
+top:1500px;
+position:absolute;
+}
+
+
+.thirtytwo{
+font-family:Arial Black;
+font-size:12px;
+position:absolute;
+top:5px;
+left:10px;
+}
+
+.Classday7{
+width:400px;
+position:absolute;
+top:60px;
+}
+
+
+.thirtythree{
+background:white;
+width:100px;
+height:50px;
+top:110px;
+left:10px;
+position:absolute;
+}
+
+.thirtythree:hover{
+background:red;
+color:white;
+cursor: pointer;
+}
+
+
+.thirtyfour{
+background:white;
+width:100px;
+height:50px;
+top:110px;
+left:140px;
+position:absolute;
+}
+
+.thirtyfour:hover{
+background:red;
+color:white;
+cursor: pointer;
+}
+
+.thirtyfive{
+background:white;
+width:110px;
+height:50px;
+top:110px;
+left:270px;
+position:absolute;
+}
+
+.thirtyfive:hover{
+background:red;
+color:white;
+cursor: pointer;
+}
+
+
+.thirtysix{
+background:white;
+width:110px;
+height:50px;
+top:190px;
+left:10px;
+position:absolute;
+}
+
+.thirtysix:hover{
+background:red;
+color:white;
+cursor: pointer;
+}
+
+
+.thirtyseven{
+background:white;
+width:110px;
+height:50px;
+top:190px;
+left:140px;
+position:absolute;
+}
+
+.thirtyseven:hover{
+background:red;
+color:white;
+cursor: pointer;
+}
+
+.thirtyeight{
+background:white;
+width:110px;
+height:50px;
+top:190px;
+left:270px;
+position:absolute;
+}
+
+.thirtyeight:hover{
+background:red;
+color:white;
+cursor: pointer;
+}
+
+
+.thirtynine{
+font-family:Arial Black;
+font-size:12px;
+position:absolute;
+top:300px;
+left:10px;
+}
+
+
+.Classday10{
+width:400px;
+position:absolute;
+top:350px;
+}
+
+
+.forty{
+top:400px;
+left:20px;
+position:absolute;
+}
+
+.forty img{
+width:auto;
+height:auto;
+}
+
+.fortyone{
+top:400px;
+left:160px;
+position:absolute;
+}
+
+.fortyone img{
+width:auto;
+height:auto;
+}
+
+
+.fortytwo{
+top:400px;
+left:290px;
+position:absolute;
+}
+
+.fortytwo img{
+width:auto;
+height:auto;
+}
+
+
+.fortythree{
+top:530px;
+left:20px;
+position:absolute;
+}
+
+.fortythree img{
+width:auto;
+height:auto;
+}
+
+
+.fortyfour{
+top:530px;
+left:160px;
+position:absolute;
+}
+
+.fortyfour img{
+width:auto;
+height:auto;
+}
+
+
+.fortyfive{
+top:530px;
+left:290px;
+position:absolute;
+}
+
+.fortyfive img{
+width:auto;
+height:auto;
+}
+
+
+.fortysix{
+background:gray;
+width:400px;
+height:250px;
+top:2500px;
+right:230px;
+position:absolute;
+}
+
+
+.fortyseven{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:5px;
+left:10px;
+}
+
+.Classday15{
+width:400px;
+position:absolute;
+top:60px;
+}
+
+
+.fortyeight2 input{
+height:50px;
+width:250px;
+margin-left:70px;
+margin-top:100px;
+outline:none;
+font-size:20px;
+}
+
+
+
+.fortyeight2 button{
+background-color:red;
+position:absolute;
+top:10px;
+width:55px;
+height:62px;
+}
+
+
+#btn2{
+            width:310px;
+			height:40px;
+			color:white;
+			background:red;
+			margin-top:180px;
+			margin-left:-290px;
+			border:none;
+			font-size:20px;
+        }
+#btn2:hover{
+           cursor: pointer;
+           background-color:white;
+			color:black;
+		   
+		   }
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+
+
+<div class=main>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#" class="logo">
+		<span class="Time">Time</span><span class="Zone">Zone</span>
+		</a>
+
+        <ul class="nav-menu">
+
+            <li class="nav-item">
+                <a href="1web.html" class="nav-link">Home</a>
+                
+            </li>
+
+            <li class="nav-item">
+                <a href="web time zone.html" class="nav-link">Shop</a>
+                
+            </li>
+
+            <li class="nav-item">
+                <a href="web3.html" class="nav-link">About</a>
+                
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">Blog</a>
+                <ul class="dropdown-menu">
+                    <li><a href="web4.html">Blog </a></li>
+                    <li><a href="web5.html">Blog Details</a></li>
+                    
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a href="web6.html" class="nav-link">Contact</a>
+               
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+
+<div class="one">
+<div class="text"><h1><center>Blog</center></h1></div></div>
+
+<div class="two">
+<img src="...5.png"/>
+
+<div class="three">
+<h1>Google inks pact for new 35-storey office</h1></div>
+
+
+<div class="four">
+<h2>That dominion stars lights dominion divide years for fourth have don't stars<br> is that he earth it first without heaven in place seed it<br> second morning saying.</h2></div>
+
+
+</div>
+
+
+<div class="five">
+<img src="...1.png"/>
+
+<div class="six">
+<h1>Google inks pact for new 35-storey office</h1></div>
+
+<div class="seven">
+<h2>That dominion stars lights dominion divide years for fourth have don't stars<br> is that he earth it first without heaven in place seed it<br> second morning saying.</h2></div>
+
+
+</div>
+
+
+<div class="eight">
+<img src="01.png"/>
+
+<div class="nine">
+<h1>Google inks pact for new 35-storey office</h1></div>
+
+<div class="ten">
+<h2>That dominion stars lights dominion divide years for fourth have don't stars<br> is that he earth it first without heaven in place seed it<br> second morning saying.</h2></div>
+
+
+</div>
+
+
+<div class="eleven">
+<img src="...2.png"/>
+
+
+<div class="twelve">
+<h1>Google inks pact for new 35-storey office</h1></div>
+
+<div class="thirteen">
+<h2>That dominion stars lights dominion divide years for fourth have don't stars<br> is that he earth it first without heaven in place seed it<br> second morning saying.</h2></div>
+
+
+</div>
+
+
+<div class="fourteen">
+<img src="...9.png"/>
+
+
+<div class="fifteen">
+<h1>Google inks pact for new 35-storey office</h1></div>
+
+<div class="sixteen">
+<h2>That dominion stars lights dominion divide years for fourth have don't stars<br> is that he earth it first without heaven in place seed it<br> second morning saying.</h2></div>
+
+
+</div>
+
+
+<div class="seventeen">
+<a href="#" class="logo">
+<span class="Time">Time</span><span class="Zone">Zone</span>
+</a>
+</div>
+
+<div class="eighteen">
+<h2>Asorem ipsum adipolor sdit amet,<br> consectetur adipisicing elitcf<br> sed do eiusmod tem</h2></div>
+
+
+<div class="nineteen">
+<h1>Quick Links</h1>
+
+<ul>
+<li><a href="#">About</a></li>
+<li><a href="#">Offers & Discounts</a></li>
+<li><a href="#">Get Coupon</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul></div>
+
+
+<div class="twenty">
+<h1>New Products</h1>
+
+<ul>
+<li><a href="#">Woman Cloth</a></li>
+<li><a href="#">Fashion Accessories</a></li>
+<li><a href="#">Man Accessories</a></li>
+<li><a href="#">Rubber made Toys</a></li>
+</ul></div>
+
+
+<div class="twentyone">
+<h1>Support</h1>
+
+<ul>
+<li><a href="#">Frequently Asked Questions</a></li>
+<li><a href="#">Terms & Conditions</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Report a Payment Issue</a></li>
+</ul></div>
+
+
+<div class="twentyone1">
+<input type="text" placeholder="Search Keyboard"/>
+<button><i class="bi bi-search iconboot"></i></button>
+
+
+
+<button id="btn">Search</button>
+
+</div>
+
+
+<div class="twentythree">
+
+<div class="twentyfour">
+<h1>Category</h1>
+</div>
+
+
+<hr class="Classday"></hr>
+
+<div class="twentyfive">
+<h2>Resaurant food(37)</h2></div>
+
+<hr class="Classday2"></hr>
+
+<div class="twentysix">
+<h2>Travel news(10)</h2></div>
+
+<hr class="Classday3"></hr>
+
+<div class="twentyseven">
+<h2>Modern technology(03)</h2></div>
+
+<hr class="Classday4"></hr>
+
+
+<div class="twentyeight">
+<h2>Product(11)</h2></div>
+
+<hr class="Classday5"></hr>
+
+
+<div class="twentynine">
+<h2>Inspiration21</h2></div>
+
+<hr class="Classday6"></hr>
+
+<div class="thirty">
+<h2>Health Care (21)09</h2></div>
+
+
+</div>
+
+
+<div class="thirtyone">
+
+<div class="thirtytwo">
+<h1>Tag Clouds</h1></div>
+
+<hr class="Classday7"></hr>
+
+<div class="thirtythree">
+<h2>project</h2></div>
+
+
+<div class="thirtyfour">
+<h2>love</h2></div>
+
+
+<div class="thirtyfive">
+<h2>technology</h2></div>
+
+<div class="thirtysix">
+<h2>travel</h2></div>
+
+<div class="thirtyseven">
+<h2>restaurant</h2></div>
+
+
+<div class="thirtyeight">
+<h2>life style</h2></div>
+
+
+<div class="thirtynine">
+<h1>Instagram Feeds</h1></div>
+
+<hr class="Classday10"></hr>
+
+<div class="forty">
+<img src="j1.png"/></div>
+
+
+<div class="fortyone">
+<img src="j2.png"/></div>
+
+<div class="fortytwo">
+<img src="j4.png"/></div>
+
+<div class="fortythree">
+<img src="j5.png"/></div>
+
+
+<div class="fortyfour">
+<img src="j6.png"/></div>
+
+<div class="fortyfive">
+<img src="j7.png"/></div>
+
+
+</div>
+
+
+<div class="fortysix">
+<div class="fortyseven">
+<h1>Newsletter</h1></div>
+
+<hr class="Classday15"></hr>
+
+
+<div class="fortyeight2">
+<input type="text" placeholder="Enter Email"/>
+
+
+<button id="btn2">SUBSCRIBE</button>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

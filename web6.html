@@ -1,0 +1,581 @@
+<html>
+<head>
+<tittle></tittle>
+</head>
+<style>
+
+
+.main{
+background-color:white;
+width:100%;
+height:400%;
+
+
+}
+.navbar {
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+span.Time { color: black;
+}
+
+span.Zone { color: red;
+}
+
+
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff2020;
+}
+
+/* DROPDOWN STYLING */
+
+.dropdown-menu {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #fff;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    border: 1px solid #ff2020;   
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;  
+    transition: 0.3s;
+}
+
+/* Hover effect inside dropdown */
+
+.dropdown-menu li:hover {
+    background-color: #ff2020;
+}
+
+.dropdown-menu li:hover a {
+    color: #fff;
+    padding-left: 5px;
+}
+
+/* Show dropdown on hover */
+
+.nav-item:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+
+
+.one{
+background-color:gray;
+width:1570px;
+height:500px;
+}
+
+.text{ 
+position:absolute;
+background-color:transparent;
+font-family:Arial Black;
+top:150px;
+left:580px;
+color:black;
+font-size:30px;
+height:90px;
+width:400px;
+}
+
+.two{
+position:absolute;
+font-family:Arial Black;
+top:600px;
+left:80px;
+font-size:12px
+}
+
+
+.three{
+position:absolute;
+width:100px;
+height:100px;
+left:990px;
+top:700px;
+}
+
+
+.three img{
+width:40px;
+height:40px;
+left:230px;
+}
+
+
+.four{
+font-family:Arial Black;
+font-size:10px;
+position:absolute;
+top:680px;
+left:1090px;
+}
+
+
+.five{
+position:absolute;
+width:100px;
+height:100px;
+left:990px;
+top:860px;
+}
+
+
+.five img{
+width:40px;
+height:40px;
+left:230px;
+}
+
+
+.six{
+font-family:Arial Black;
+font-size:10px;
+position:absolute;
+top:840px;
+left:1090px;
+}
+
+
+.seven{
+position:absolute;
+width:100px;
+height:100px;
+left:990px;
+top:1020px;
+}
+
+
+.seven img{
+width:40px;
+height:40px;
+left:230px;
+}
+
+
+.eight{
+font-family:Arial Black;
+font-size:10px;
+position:absolute;
+top:1000px;
+left:1090px;
+}
+
+
+
+
+.fiftyone{
+font-size:20px;
+width:auto;
+height:auto;
+top:730px;
+left:70px;
+position:absolute;
+}
+
+.fiftyone textarea{width:900px;
+height:200px;}
+
+.t1 {
+width:400px;
+height:50px;
+}
+
+
+.t2{
+width:700px;
+height:50px;
+
+}
+
+
+#btn3{
+width:300px;
+height:50px;
+position:absolute;
+background-color:red;
+left:100px;
+font-size:19px;
+}
+		   
+#btn3:hover{
+background-color:white;}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fortysix{ max-width: 1200px;
+ margin: auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 20px 30px;
+ position:absolute;
+top:1250px;
+}
+
+.logo {
+ font-size: 24px;
+ font-weight: 700;
+ text-decoration: none;
+	
+}
+
+span.Time { color: black;
+}
+
+span.Zone { color: red;
+}
+
+
+.fortyseven{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:1300px;
+left:50px;
+}
+
+.fortyeight{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:1250px;
+left:480px;
+background-color:white;
+height:300px;
+}
+
+.fortyeight ul{
+
+}
+
+.fortyeight ul li{
+list-style-type:none;
+
+}
+
+.fortyeight ul li a{
+text-decoration:none;
+color:Black;
+font-size:15px;
+}
+
+.fortyeight ul li a:hover{
+color:red;
+margin-left:5px;
+transition:1s;
+}
+
+
+.fortynine{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:1250px;
+left:790px;
+background-color:white;
+height:300px;
+}
+
+.fortynine ul{
+
+}
+
+.fortynine ul li{
+list-style-type:none;
+
+}
+
+.fortynine ul li a{
+text-decoration:none;
+color:Black;
+font-size:15px;
+}
+
+.fortynine ul li a:hover{
+color:red;
+margin-left:5px;
+transition:1s;
+}
+
+
+.fifty{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:1250px;
+left:1160px;
+background-color:white;
+height:300px;
+}
+
+.fifty ul{
+
+}
+
+.fifty ul li{
+list-style-type:none;
+
+}
+
+.fifty ul li a{
+text-decoration:none;
+color:Black;
+font-size:15px;
+}
+
+.fifty ul li a:hover{
+color:red;
+margin-left:5px;
+transition:1s;
+}
+
+
+
+</style>
+<body>
+
+
+<div class=main>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#" class="logo">
+		<span class="Time">Time</span><span class="Zone">Zone</span>
+		</a>
+
+        <ul class="nav-menu">
+
+            <li class="nav-item">
+                <a href="1web.html" class="nav-link">Home</a>
+                
+            </li>
+
+            <li class="nav-item">
+                <a href="web time zone.html" class="nav-link">Shop</a>
+                
+            </li>
+
+            <li class="nav-item">
+                <a href="web3.html" class="nav-link">About</a>
+                
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">Blog</a>
+                <ul class="dropdown-menu">
+                    <li><a href="web4.html">Blog </a></li>
+                    <li><a href="web5.html">Blog Details</a></li>
+                    
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a href="web6.html" class="nav-link">Contact</a>
+               
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+
+
+
+<div class="one">
+<div class="text"><h1><center>Contacts</center></h1></div></div>
+
+
+<div class="two">
+<h1>Get in Touch</h1></div>
+
+
+<div class="three">
+<img src="home.png"/></div>
+
+
+<div class="four">
+<h1>Buttonwood, California.<br>Rosemead, CA 91770</h1></div>
+
+
+<div class="five">
+<img src="k1.png"/></div>
+
+
+<div class="six">
+<h1>+1 253 565 2365<br>Mon to Fri 9am to 6pm</h1></div></div>
+
+
+<div class="seven">
+<img src="email.png"/></div>
+
+
+<div class="eight">
+<h1>support@colorlib.com<br>Send us your query anytime!</h1></div>
+
+
+
+<div class="fiftyone">
+<textarea cols="20" rows="20" placeholder="Write Comment">
+</textarea>
+
+<p>
+<input class="t1" type="text" placeholder="Enter your name"/>
+<input class="t1" type="text" placeholder="Enter your Email"/>
+</p>
+
+<input class="t2" type="text" placeholder="Enter your Website"/>
+<br>
+<p>
+<button id="btn3">Send Message</button>
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="fortysix">
+<a href="#" class="logo">
+<span class="Time">Time</span><span class="Zone">Zone</span>
+</a></div>
+
+
+<div class="fortyseven">
+<h2>Asorem ipsum adipolor sdit amet,<br> consectetur adipisicing elitcf<br> sed do eiusmod tem</h2></div>
+
+<div class="fortyeight">
+<h1>Quick Links</h1>
+
+<ul>
+<li><a href="#">About</a></li>
+<li><a href="#">Offers & Discounts</a></li>
+<li><a href="#">Get Coupon</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>
+
+<div class="fortynine">
+<h1>New Products</h1>
+
+<ul>
+<li><a href="#">Woman Cloth</a></li>
+<li><a href="#">Fashion Accessories</a></li>
+<li><a href="#">Man Accessories</a></li>
+<li><a href="#">Rubber made Toys</a></li>
+</ul></div>
+
+<div class="fifty">
+<h1>Support</h1>
+
+<ul>
+<li><a href="#">Frequently Asked Questions</a></li>
+<li><a href="#">Terms & Conditions</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Report a Payment Issue</a></li>
+</ul>
+</div>
+
+</body>
+</html>

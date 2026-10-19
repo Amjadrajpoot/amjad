@@ -1,0 +1,602 @@
+<html>
+<head>
+<title></title>
+</head>
+<style>
+
+
+.main{
+background-color:white;
+width:100%;
+height:400%;
+
+
+}
+.navbar {
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+span.Time { color: black;
+}
+
+span.Zone { color: red;
+}
+
+
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff2020;
+}
+
+/* DROPDOWN STYLING */
+
+.dropdown-menu {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #fff;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    border: 1px solid #ff2020;   
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;  
+    transition: 0.3s;
+}
+
+/* Hover effect inside dropdown */
+
+.dropdown-menu li:hover {
+    background-color: #ff2020;
+}
+
+.dropdown-menu li:hover a {
+    color: #fff;
+    padding-left: 5px;
+}
+
+/* Show dropdown on hover */
+
+.nav-item:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+
+.one{
+position:absolute;
+background-color:transparent;
+font-family:Arial Unicode MS;
+top:150px;
+left:580px;
+color:black;
+font-size:25px;
+height:90px;
+width:400px;
+}
+
+
+
+.two{
+background-color:red;
+position:absolute;
+width:50px;
+height:3px;
+top:400px;
+left:190px;
+}
+
+.three{
+font-family:Arial Black;
+font-size:16px;
+position:absolute;
+top:356px;
+left:250px;
+background-color:transparent;
+height:100px;
+}
+
+.four{
+font-family:Arial Unicode MS;
+font-size:12px;
+position:absolute;
+top:410px;
+left:250px;
+background-color:transparent;
+height:100px
+}
+
+.five{
+background-color:red;
+position:absolute;
+width:50px;
+height:3px;
+top:780px;
+left:190px;
+}
+
+.six{
+font-family:Arial Black;
+font-size:16px;
+position:absolute;
+top:740px;
+left:250px;
+background-color:transparent;
+height:100px;
+}
+
+.seven{
+font-family:Arial Unicode MS;
+font-size:12px;
+position:absolute;
+top:800px;
+left:250px;
+background-color:transparent;
+height:100px
+}
+
+
+.eight{
+background-color:red;
+width:1440px;
+height:500px;
+position:absolute;
+top:1100px;
+left:180px;
+}
+
+.nine{
+background-color:transparent;
+position:absolute;
+width:50px;
+height:100px;
+top:1130px;
+left:320px;
+}
+
+.nine img{
+width:95px;
+height:100px;
+}
+
+.ten{
+font-family:Arial Black;
+font-size:17px;
+position:absolute;
+top:1220px;
+left:250px;
+}
+
+.eleven{
+font-family:Arial Unicode MS;
+font-size:18px;
+position:absolute;
+top:1300px;
+left:230px;
+}
+
+.twelve{
+background-color:transparent;
+position:absolute;
+width:50px;
+height:100px;
+top:1130px;
+left:810px;
+}
+
+.twelve img{
+width:85px;
+height:120px;
+}
+
+
+.thirteen{
+font-family:Arial Black;
+font-size:16px;
+position:absolute;
+top:1220px;
+left:710px;
+}
+
+.fourteen{
+font-family:Arial Unicode MS;
+font-size:14px;
+position:absolute;
+top:1300px;
+left:700px;
+}
+
+.fifteen{
+background-color:transparent;
+position:absolute;
+width:50px;
+height:100px;
+top:1130px;
+left:1300px;
+}
+
+.fifteen img{
+width:85px;
+height:120px;
+}
+
+.sixteen{
+font-family:Arial Black;
+font-size:16px;
+position:absolute;
+top:1220px;
+left:1180px;
+}
+
+.seventeen{
+font-family:Arial Unicode MS;
+font-size:15px;
+position:absolute;
+top:1300px;
+left:1180px;
+}
+
+
+.eighteen{
+max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+	position:absolute;
+	top:1650px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+	
+}
+
+span.Time { color: black;
+}
+
+span.Zone { color: red;
+}
+
+.nineteen{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:1700px;
+left:50px;
+}
+
+
+.twenty{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:1650px;
+left:480px;
+background-color:white;
+height:300px;
+}
+
+.twenty ul{
+
+}
+
+.twenty ul li{
+list-style-type:none;
+
+}
+
+.twenty ul li a{
+text-decoration:none;
+color:Black;
+font-size:15px;
+}
+
+.twenty ul li a:hover{
+color:red;
+margin-left:5px;
+transition:1s;
+}
+
+
+.twentyone{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:1650px;
+left:790px;
+background-color:white;
+height:300px;
+}
+
+.twentyone ul{
+
+}
+
+.twentyone ul li{
+list-style-type:none;
+
+}
+
+.twentyone ul li a{
+text-decoration:none;
+color:Black;
+font-size:15px;
+}
+
+.twentyone ul li a:hover{
+color:red;
+margin-left:5px;
+transition:1s;
+}
+
+
+.twentytwo{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:1650px;
+left:1160px;
+background-color:white;
+height:300px;
+}
+
+.twentytwo ul{
+
+}
+
+.twentytwo ul li{
+list-style-type:none;
+
+}
+
+.twentytwo ul li a{
+text-decoration:none;
+color:Black;
+font-size:15px;
+}
+
+.twentytwo ul li a:hover{
+color:red;
+margin-left:5px;
+transition:1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+
+
+<div class=main>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#" class="logo">
+		<span class="Time">Time</span><span class="Zone">Zone</span>
+		</a>
+
+        <ul class="nav-menu">
+
+            <li class="nav-item">
+                <a href="1web.html" class="nav-link">Home</a>
+                
+            </li>
+
+            <li class="nav-item">
+                <a href="web time zone.html" class="nav-link">Shop</a>
+                
+            </li>
+
+            <li class="nav-item">
+                <a href="web3.html" class="nav-link">About</a>
+                
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">Blog</a>
+                <ul class="dropdown-menu">
+                    <li><a href="web4.html">Blog </a></li>
+                    <li><a href="web5.html">Blog Details</a></li>
+                    
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a href="web6.html" class="nav-link">Contact</a>
+               
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+
+<div class="one"> 
+<h1><center>About Us</center></h1>
+</div>
+</div>
+
+<div class="two"></div>
+
+<div class="three">
+<h1>Our Mission</h1></div>
+
+<div class="four">
+<h2>Consectetur adipiscing elit, sued do eiusmod tempor ididunt udfgt labore et dolore<br> magna aliqua. Quis ipsum suspendisces gravida. Risus commodo viverra<br> sebfd dho eiusmod tempor maecenas accumsan lacus. Risus commodo viverra sebfd<br> dho eiusmod tempor maecenas accumsan lacus.<br><br><br>Risus commodo viverra sebfd dho eiusmod tempor maecenas accumsan lacus.<br> Risus commodo viverra sebfd dho eiusmod tempor maecenas accumsan</h2></div>
+
+<div class="five"></div>
+
+<div class="six">
+<h1>Our Vision</h1></div>
+
+<div class="seven">
+<h2>Consectetur adipiscing elit, sued do eiusmod tempor ididunt udfgt labore et dolore<br> magna aliqua. Quis ipsum suspendisces gravida. Risus commodo viverra<br> sebfd dho eiusmod tempor maecenas accumsan lacus. Risus commodo viverra sebfd<br> dho eiusmod tempor maecenas accumsan lacus<br><br><br>Risus commodo viverra sebfd dho eiusmod tempor maecenas accumsan lacus.<br> Risus commodo viverra sebfd dho eiusmod tempor maecenas accumsan.</h2></div>
+
+
+<div class="eight"></div>
+
+<div class="nine">
+<img src="img/p12.png"/></div>
+
+<div class="ten">
+<h1>Free Shipping Method</h1></div>
+
+
+<div class="eleven">
+<h2>aorem ixpsacdolor sit ameasecur<br> adipisicing elitsf edasd.</h2></div>
+
+<div class="twelve">
+<img src="img/b13.png"/></div>
+
+<div class="thirteen">
+<h1>Secure Payment System</h1></div>
+
+<div class="fourteen">
+<h1>aorem ixpsacdolor sit ameasecur<br> adipisicing elitsf edasds</h1></div>
+
+
+<div class="fifteen">
+<img src="img/b16.png"/></div>
+
+
+<div class="sixteen">
+<h1>Secure Payment System</h1></div>
+
+<div class="seventeen">
+<h2>aorem ixpsacdolor sit ameasecur<br> adipisicing elitsf edasds</h2></div>
+
+
+<div class="eighteen">
+<a href="#" class="logo">
+<span class="Time">Time</span><span class="Zone">Zone</span>
+</a></div>
+
+
+<div class="nineteen">
+<h2>Asorem ipsum adipolor sdit amet,<br> consectetur adipisicing elitcf<br> sed do eiusmod tem</h2></div>
+
+
+<div class="twenty">
+<h1>Quick Links</h1>
+
+<ul>
+<li><a href="#">About</a></li>
+<li><a href="#">Offers & Discounts</a></li>
+<li><a href="#">Get Coupon</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>
+
+
+<div class="twentyone">
+<h1>New Products</h1>
+
+<ul>
+<li><a href="#">Woman Cloth</a></li>
+<li><a href="#">Fashion Accessories</a></li>
+<li><a href="#">Man Accessories</a></li>
+<li><a href="#">Rubber made Toys</a></li>
+</ul>
+</div>
+
+<div class="twentytwo">
+<h1>Support</h1>
+
+<ul>
+<li><a href="#">Frequently Asked Questions</a></li>
+<li><a href="#">Terms & Conditions</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Report a Payment Issue</a></li>
+</ul></div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

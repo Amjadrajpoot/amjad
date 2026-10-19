@@ -1,0 +1,58 @@
+<html>
+<head>
+<tittle> </tittle>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<style>
+
+
+.four{position:absolute;background-color:green;width:100px;height:100px;left:-100px;top:0px;}
+
+
+
+
+
+</style>
+<body>
+<div class="four">
+<button class="btn2">Ut</button>
+</div>
+<button class="btn1">yt</button>
+
+
+
+
+<script>
+$(document).ready(function(){
+$(".btn1").click(function(){
+$(".four").animate({left: '0px',
+        
+		 height: '100px',
+		 width: '100px',
+    });
+  });
+  $(".btn2").click(function(){
+$(".four").animate({left: '-100px',
+        
+		 height: '100px',
+		 width: '100px',
+    });
+  });
+});
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

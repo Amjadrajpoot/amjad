@@ -1,0 +1,103 @@
+<html>
+<head>
+<tittle>
+
+</tittle>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<style>
+
+.one{background-color:red;width:100px;height:100px;left:100px;}
+
+.two{background-color:red;width:100px;height:100px;left:100px;top:50px;}
+
+
+
+</style>
+<body>
+<div class="one"></div>
+<button class="btn">click</button>
+<button class="btq">click</button>
+<button class="bta">click</button>
+
+
+
+<div class="two"></div>
+<button class="btn1">fadeIn</button>
+<button class="btq2">fadeOut</button>
+<button class="bta3">fadeToggle</button>
+<button class="bta4">fadeTo</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+$(document).ready(function(){
+$(".btn").click(function(){
+$(".one").hide();
+});
+
+$(".btq").click(function(){
+$(".one").show();
+});
+
+$(".bta").click(function(){
+$(".one").toggle();
+});
+
+});
+
+
+
+$(document).ready(function(){
+$(".btn1").click(function(){
+$(".two").fadeOut();
+});
+
+$(".btq2").click(function(){
+$(".two").fadeIn();
+});
+
+$(".bta3").click(function(){
+$(".two").fadeToggle();
+});
+
+$(".bta4").click(function(){
+$(".two").fadeTo();
+});
+
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

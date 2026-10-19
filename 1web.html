@@ -1,0 +1,1362 @@
+<html>
+<head>
+<title>Timezone </title>
+
+<style>
+ {margin: 0;padding: 0;box-sizing: border-box;}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main{
+background-color:white;
+width:100%;
+height:400%;
+
+
+}
+.navbar {
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+span.Time { color: black;
+}
+
+span.Zone { color: red;
+}
+
+
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff2020;
+}
+
+/* DROPDOWN STYLING */
+
+.dropdown-menu {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #fff;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    border: 1px solid #ff2020;   
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;  
+    transition: 0.3s;
+}
+
+/* Hover effect inside dropdown */
+
+.dropdown-menu li:hover {
+    background-color: #ff2020;
+}
+
+.dropdown-menu li:hover a {
+    color: #fff;
+    padding-left: 5px;
+}
+
+/* Show dropdown on hover */
+
+.nav-item:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+.one{
+background-color:gray;
+width:100%;
+height:920px;
+overflow:hidden;
+
+}
+
+.two {
+font-family:Arial Black;
+font-size:80px;
+position:absolute;
+top:190px;
+
+}
+
+.two:hover{
+animation:noor 4s linear 0s infinite alternate;
+cursor:pointer;
+
+}
+
+@keyframes noor{
+      
+       from{margin-left:0px;margin-top:0px;opacity:0;} 
+       to{margin-left:100px;margin-top:0px;opacity:1;}
+	   }
+
+
+
+
+.three{
+position:absolute;
+left:950px;
+width:auto;
+height:710px;
+}
+
+.three:hover{
+cursor: pointer;
+animation:noor1 4s linear 0s infinite alternate;
+}
+
+@keyframes noor1{
+      
+       from{margin-left:0px;margin-top:0px;scale:0.7;} 
+       to{margin-left:0px;margin-top:0px;scale:1;}
+	   }
+
+.four{
+position:absolute;
+top:500px;
+left:100px;
+font-size:25px;
+}
+
+.four:hover{
+cursor: pointer;
+animation:noor2 2s linear 0s infinite alternate;
+}
+
+@keyframes noor2{
+      
+       from{margin-left:0px;margin-top:0px;opacity:0;} 
+       to{margin-left:100px;margin-top:0px;opacity:1;}
+	   
+	   }
+
+#btn{
+            width:100px;
+			height:40px;
+			color:white;
+			background:black;
+			margin-top:48rem;
+			margin-left:85px;
+        }
+#btn:hover{
+           cursor: pointer;
+           background-color:red}
+           
+
+
+.five{
+font-family:Arial Black;
+font-size:35px;
+top:2900px;
+left:300px;
+}
+
+.six{
+background-color:transparent;
+position:absolute;
+left:70px;
+width:450px;
+height:320px;
+overflow:hidden;
+}
+.six img{
+width:450px;
+height:230px;
+
+}
+
+
+.six img:hover{
+cursor: pointer;
+scale:1.2;transition;
+}
+
+.seven{
+background-color:transparent;
+position: absolute;
+left:560px;
+width:450px;
+height:320px;
+overflow: hidden;
+}
+
+.seven img{
+width:450px;
+height:230px;
+}
+
+
+.seven img:hover{
+cursor: pointer;
+scale:1.2;transition;
+overflow: hidden;
+}
+
+.eight{
+background-color:transparent;
+position:absolute;
+left:1100px;
+width:450px;
+height:320px;
+overflow:hidden;
+}
+
+.eight img{
+width:450px;
+height:230px;
+}
+
+
+
+.eight img:hover{
+cursor: pointer;
+scale:1.2;transition;
+overflow:hidden;
+}
+
+.nine{
+background-color:red;
+position:absolute;
+width:580px;
+height:550px;
+top:1650px;
+overflow:hidden;
+}
+
+.nine img{
+width:580px;
+height:550px;
+}
+
+.nine img:hover{
+cursor: pointer;
+scale:1.2;transition:1s;
+overflow:hidden;
+}
+
+.ten{
+background-color:transparent;
+position:absolute;
+width:330px;
+height:300px;
+top:1650px;
+left:600px;
+overflow:hidden;
+}
+
+.ten img{
+width:330px;
+height:300px;
+
+}
+
+.ten img:hover{
+cursor: pointer;
+scale:1.2;transition:1s;
+overflow:hidden;
+}
+
+.eleven{
+background-color:transparent;
+position:absolute;
+width:330px;
+height:240px;
+top:1960px;
+left:600px;
+overflow:hidden;
+}
+
+.eleven img{
+width:330px;
+height:240px;
+}
+
+.eleven img:hover{
+cursor: pointer;
+scale:1.2;transition:1s;
+overflow:hidden;
+}
+
+.twelve{
+background-color:transparent;
+position:absolute;
+width:600px;
+height:300px;
+top:1650px;
+left:950px;
+overflow:hidden;
+}
+
+.twelve img{
+width:600px;
+height:300px;
+}
+
+.twelve img:hover{
+cursor: pointer;
+scale:1.2;transition:1s;
+overflow:hidden;
+}
+
+.thirteen{
+background-color:transparent;
+position:absolute;
+width:600px;
+height:240px;
+top:1960px;
+left:950px;
+overflow:hidden;
+}
+
+.thirteen img{
+width:600px;
+height:240px;
+}
+
+.thirteen img:hover{
+cursor: pointer;
+scale:1.2;transition:1s;
+overflow:hidden;
+}
+
+.fourteen{
+font-family:Arial Black;
+font-size:80px;
+position:absolute;
+top:2200px;
+left:390px;
+}
+
+.fifteen{
+font-family:Arial Unicode MS;
+font-size:35px;
+position:absolute;
+top:2400px;
+left:300px;
+}
+
+.sixteen{
+background-color:transparent;
+position:absolute;
+width:450px;
+height:303px;
+top:2600px;
+left:100px;
+overflow:hidden;
+}
+
+.sixteen img{
+width:450px;
+height:300px;
+}
+
+.sixteen1{
+background-color:red;
+width:450px;
+height:60px;
+position:absolute;
+top:300px;
+
+}
+
+.sixteen1 p{
+line-height:15px;
+color:white;
+font-size:20px;
+text-align:center;
+
+}
+
+.sixteen:hover .sixteen1{
+position:absolute;
+top:250px;
+transition:0.5s;
+}
+
+
+.seventeen{
+font-family:Arial Unicode MS;
+width:450px;
+height:100px; 
+background-color:transparent;
+position:absolute;
+top:2900px;
+left:100px;
+}
+
+.Eighteen{
+background-color:transparent;
+position:absolute;
+width:450px;
+height:303px;
+top:2600px;
+left:600px;
+overflow:hidden;
+}
+
+.Eighteen img{
+width:450px;
+height:300px;
+}
+
+.Eighteen2{
+background-color:red;
+width:450px;
+height:60px;
+position:absolute;
+top:300px;
+
+}
+
+.Eighteen2 p{
+line-height:15px;
+color:white;
+font-size:20px;
+text-align:center;
+
+}
+
+.Eighteen:hover .Eighteen2{
+position:absolute;
+top:250px;
+transition:0.5s;
+}
+
+
+.nineteen{
+font-family:Arial Unicode MS
+width:450px;
+height:100px; 
+background-color:transparent;
+position:absolute;
+top:2900px;
+left:730px;
+}
+
+
+.twenty{
+background-color:transparent;
+position:absolute;
+width:450px;
+height:303px;
+top:2600px;
+left:1100px;
+overflow:hidden;
+}
+
+.twenty img{
+width:450px;
+height:300px;
+}
+
+.twenty3{
+background-color:red;
+width:450px;
+height:60px;
+position:absolute;
+top:300px;
+
+}
+
+.twenty3 p{
+line-height:15px;
+color:white;
+font-size:20px;
+text-align:center;
+
+}
+
+.twenty:hover .twenty3{
+position:absolute;
+top:250px;
+transition:0.5s;
+}
+
+
+.twentyone{
+font-family:Arial Unicode MS;
+width:450px;
+height:100px; 
+background-color:transparent;
+position:absolute;
+top:2900px;
+left:1080px;
+}
+
+.twentytwo{
+background-color:transparent;
+position:absolute;
+width:450px;
+height:303px;
+top:3200px;
+left:100px;
+overflow:hidden;
+}
+
+.twentytwo img{
+width:450px;
+height:300px;
+}
+
+.twentytwo4{
+background-color:red;
+width:450px;
+height:60px;
+position:absolute;
+top:300px;
+
+}
+
+.twentytwo4 p{
+line-height:15px;
+color:white;
+font-size:20px;
+text-align:center;
+
+}
+
+.twentytwo:hover .twentytwo4{
+position:absolute;
+top:250px;
+transition:0.5s;
+}
+
+
+.twentythree{
+font-family:Arial Unicode MS;
+width:450px;
+height:100px; 
+background-color:transparent;
+position:absolute;
+top:3500px;
+left:100px;
+}
+
+
+.twentyfour{
+background-color:transparent;
+position:absolute;
+width:450px;
+height:303px;
+top:3200px;
+left:600px;
+overflow:hidden;
+}
+
+.twentyfour img{
+width:450px;
+height:300px;
+}
+
+.twentyfour5{
+background-color:red;
+width:450px;
+height:60px;
+position:absolute;
+top:300px;
+
+}
+
+.twentyfour5 p{
+line-height:15px;
+color:white;
+font-size:20px;
+text-align:center;
+
+}
+
+.twentyfour:hover .twentyfour5{
+position:absolute;
+top:250px;
+transition:0.5s;
+}
+
+
+.twentyfive{
+font-family:Arial Unicode MS;
+width:450px;
+height:100px; 
+background-color:transparent;
+position:absolute;
+top:3500px;
+left:600px;
+}
+
+
+.twentysix{
+background-color:transparent;
+position:absolute;
+width:450px;
+height:303px;
+top:3200px;
+left:1100px;
+overflow:hidden;
+}
+
+.twentysix img{
+width:450px;
+height:300px;
+}
+
+.twentysix7{
+background-color:red;
+width:450px;
+height:60px;
+position:absolute;
+top:300px;
+
+}
+
+.twentysix7 p{
+line-height:15px;
+color:white;
+font-size:20px;
+text-align:center;
+
+}
+
+.twentysix:hover .twentysix7{
+position:absolute;
+top:250px;
+transition:0.5s;
+}
+
+
+.twentyseven{
+font-family:Arial Unicode MS;
+width:450px;
+height:100px; 
+background-color:transparent;
+position:absolute;
+top:3500px;
+left:1100px;
+}
+
+.twentyeight{
+position:absolute;
+font-family:Arial Unicode MS;
+top:3800px;
+left:600px;
+color:white;
+background:black;
+font-size:25px;
+}
+
+.twentyeight:hover{
+background:red;
+animation:none;
+}
+
+.twentynine{
+background-color:transparent;
+position:absolute;
+width:500px;
+height:400px;
+top:4000px;
+left:1000px;
+overflow:hidden;
+
+}
+
+.twentynine img{
+width:500px;
+height:400px;
+}
+
+
+.thirty{
+font-family:Arial Black;
+font-size:25px;
+position:absolute;
+top:4000px;
+left:100px;
+}
+
+.thirtyone{
+font-family:Arial Unicode MS;
+font-size:20px;
+position:absolute;
+top:4100px;
+left:100px;
+}
+
+
+.thirtytwo{
+position:absolute;
+font-family:Arial Unicode MS;
+top:4300px;
+left:100px;
+color:white;
+background:black;
+font-size:20px;
+height:90px;
+width:300px;
+}
+
+.thirtytwo:hover{
+background:red;
+animation:none;
+height:90px;
+width:300px;
+}
+
+.thirtythree{
+background-color:red;
+position:absolute;
+width:500px;
+height:400px;
+top:4500px;
+left:100px;
+overflow:hidden;
+
+}
+
+.thirtythree img{
+width:500px;
+height:400px;
+}
+
+.thirtyfour{
+font-family:Arial Unicode MS;
+font-size:20px;
+position:absolute;
+top:4500px;
+left:800px;
+}
+
+.thirtyfive{
+font-family:Arial Unicode MS;
+font-size:20px;
+position:absolute;
+top:4600px;
+left:800px
+}
+
+
+
+.thirtysix{
+position:absolute;
+font-family:Arial Unicode MS;
+top:4800px;
+left:800px;
+color:white;
+background:black;
+font-size:30px;
+height:90px;
+width:300px;
+}
+
+.thirtysix:hover{
+background:red;
+animation:none;
+height:90px;
+width:300px;
+}
+
+
+.thirtyseven{
+background-color:red;
+height:400px;
+width:1280px;
+position:absolute;
+top:5000px;
+left:170px;
+}
+
+.thirtyseven img{
+width:90px;
+height:80px;
+position:absolute;
+left:90px;
+top:20px;
+}
+
+.thirtyeight{
+font-family:Arial Unicode MS;
+font-size:16px;
+position:absolute;
+top:5100px;
+left:200px;
+}
+
+.thirtynine{
+font-family:Arial Black;
+font-size:14px;
+position:absolute;
+top:5200px;
+left:200px;
+}
+
+
+.forty{
+background-color:transparent;
+height:400px;
+width:1280px;
+position:absolute;
+top:5000px;
+left:170px;
+}
+
+.forty img{
+width:90px;
+height:80px;
+position:absolute;
+left:570px;
+top:20px;
+}
+
+.fortyone{
+font-family:Arial Unicode MS;
+font-size:16px;
+position:absolute;
+top:5100px;
+left:650px;
+}
+
+.fortytwo{
+font-family:Arial Black;
+font-size:14px;
+position:absolute;
+top:5200px;
+left:620px
+}
+
+
+.fortythree{
+background-color:transparent;
+height:400px;
+width:1280px;
+position:absolute;
+top:5000px;
+left:170px;
+}
+
+.fortythree img{
+width:90px;
+height:80px;
+position:absolute;
+left:970px;
+top:20px;
+}
+
+.fortyfour{
+font-family:Arial Unicode MS;
+font-size:16px;
+position:absolute;
+top:5100px;
+left:1060px;
+}
+
+.fortyfive{
+font-family:Arial Black;
+font-size:14px;
+position:absolute;
+top:5200px;
+left:1050px;
+}
+
+
+
+.fortysix{ max-width: 1200px;
+ margin: auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 20px 30px;
+ position:absolute;
+top:5450px;
+}
+
+.logo {
+ font-size: 24px;
+ font-weight: 700;
+ text-decoration: none;
+	
+}
+
+span.Time { color: black;
+}
+
+span.Zone { color: red;
+}
+
+
+.fortyseven{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:5500px;
+left:50px;
+}
+
+.fortyeight{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:5450px;
+left:480px;
+background-color:white;
+height:300px;
+}
+
+.fortyeight ul{
+
+}
+
+.fortyeight ul li{
+list-style-type:none;
+
+}
+
+.fortyeight ul li a{
+text-decoration:none;
+color:Black;
+font-size:15px;
+}
+
+.fortyeight ul li a:hover{
+color:red;
+margin-left:5px;
+transition:1s;
+}
+
+
+.fortynine{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:5450px;
+left:790px;
+background-color:white;
+height:300px;
+}
+
+.fortynine ul{
+
+}
+
+.fortynine ul li{
+list-style-type:none;
+
+}
+
+.fortynine ul li a{
+text-decoration:none;
+color:Black;
+font-size:15px;
+}
+
+.fortynine ul li a:hover{
+color:red;
+margin-left:5px;
+transition:1s;
+}
+
+
+.fifty{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:5450px;
+left:1160px;
+background-color:white;
+height:300px;
+}
+
+.fifty ul{
+
+}
+
+.fifty ul li{
+list-style-type:none;
+
+}
+
+.fifty ul li a{
+text-decoration:none;
+color:Black;
+font-size:15px;
+}
+
+.fifty ul li a:hover{
+color:red;
+margin-left:5px;
+transition:1s;
+}
+
+
+
+
+
+</style>
+
+</head>
+<body>
+<div class=main>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#" class="logo">
+		<span class="Time">Time</span><span class="Zone">Zone</span>
+		</a>
+
+        <ul class="nav-menu">
+
+            <li class="nav-item">
+                <a href="1web.html" class="nav-link">Home</a>
+                
+            </li>
+
+            <li class="nav-item">
+                <a href="web time zone.html" class="nav-link">Shop</a>
+                
+            </li>
+
+            <li class="nav-item">
+                <a href="web3.html" class="nav-link">About</a>
+                
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">Blog</a>
+                <ul class="dropdown-menu">
+                    <li><a href="web4.html">Blog </a></li>
+                    <li><a href="web5.html">Blog Details</a></li>
+                    
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a href="web6.html" class="nav-link">Contact</a>
+               
+            </li>
+
+        </ul>
+    </div>
+</nav>
+<div class="one">
+
+<h1 class="two">Select Your New<br> Perfect Style</h1>
+<img src="C:\Users\LENOVO\Downloads\watch.png" class="three" height="auto" width="auto"/>
+
+<P class="four">Ut enim ad minim veniam, quis nostrud exercitation<br> ullamco laboris nisi ut aliquip ex ea commodo<br> consequat is aute irure.</P>
+
+
+<button id="btn">stop-now</button>
+
+
+</div>
+
+<div class="five"><h1>New Arrivals</h1></div>
+<div class="six">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfqme4Qn6968dXVuci4L5i9YLlEo_qLBHeEJc8SFWU8Q&s" />
+<h1>Thermo Ball Etip Gloves<br>$47.734</h1>
+
+</div>
+
+<div class="seven">
+<img src="https://i5.walmartimages.com/seo/Christmas-Day-Gift-Men-s-Dual-Time-Automatic-Mechanical-Business-Waterproof-Watch-Leather-Band-Rose-Best-Boy-Friend-Husband-Father-s-Gift-Birthday_dd52e6bd-6907-4cdb-9882-3e8e88df1b1c.29fbd19cb952a2ee4d8ae30232b0cac6.jpeg"/>
+<h1>Thermo Ball Etip Gloves<br>$47.734</h1>
+</div>
+<div class="eight">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKJGNW0XA6-dCah5IajsVrGvyhoQXuHgdW6w&s"/>
+<h1>Thermo Ball Etip Gloves<br>$47.734</h1>
+</div>
+
+
+<div class="nine">
+<img src="https://www.bing.com/th/id/OIP.hBryOEls7XHX5X9nKn1VqgHaE7?w=267&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"/>
+</div>
+
+<div class="ten">
+<img src="https://www.bing.com/th/id/OIP.WcHVqelKjdJyALd-j28M6AHaE6?w=291&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"/>
+</div>
+
+<div class="eleven">
+<img src="https://i.pinimg.com/originals/97/c1/a0/97c1a0f85319f3829fc338ee7a2653ef.jpg"/>
+
+</div>
+
+<div class="twelve">
+<img src="https://th.bing.com/th/id/OIP.L0Qrc5FQOOy2dQQ5MWGGJQHaE8?w=284&h=190&c=7&r=0&o=7&pid=1.7&rm=3"/>
+
+</div>
+
+<div class="thirteen">
+<img src="https://th.bing.com/th/id/OIP.Zv5UC4Fw7g3f9-8oI0x4xwHaE8?w=229&h=180&c=7&r=0&o=7&pid=1.7&rm=3"/>
+
+</div>
+
+<div class="fourteen">
+<h3><center>Popular Items</center></h3>
+</div>
+
+<div class="fifteen">
+<h5><center>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut<br> labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida</center></h5>
+</div>
+
+
+<div class="sixteen">
+<img src="p1.png"/>
+
+<div class="sixteen1">
+<p>Add to cart</p>
+</div>
+
+</div>
+
+<div class="seventeen">
+<h3><center>Thermo Ball Etip Gloves<br>$47.743</center></h3>
+</div>
+
+<div class="Eighteen">
+<img src="p2.png"/>
+
+<div class="Eighteen2">
+<p>Add to Cart</p>
+</div>
+</div>
+<div class="nineteen">
+<h3><center>Thermo Ball Etip Gloves<br>$47.743</center></h3>
+</div>
+
+
+<div class="twenty">
+<img src="p4.png"/>
+
+<div class="twenty3">
+<p>Add to Cart</p>
+</div>
+</div>
+
+<div class="twentyone">
+<h3><center>Thermo Ball Etip Gloves<br>$47.743</center></h3>
+</div>
+
+
+<div class="twentytwo">
+<img src="p5.png"/>
+
+<div class="twentytwo4">
+<p>Add to Cart</p>
+</div>
+</div>
+
+<div class="twentythree">
+<h3><center>Thermo Ball Etip Gloves<br>$47.743</center></h3>
+</div>
+
+
+<div class="twentyfour">
+<img src="p6.png"/>
+
+<div class="twentyfour5">
+<p>Add to Cart</p>
+</div>
+</div>
+
+<div class="twentyfive">
+<h3><center>Thermo Ball Etip Gloves<br>$47.743</center></h3>
+</div>
+
+
+<div class="twentysix">
+<img src="p7.png"/>
+
+<div class="twentysix7">
+<p>Add to Cart </p>
+</div>
+</div>
+
+
+
+<div class="twentyseven">
+<h3><center>Thermo Ball Etip Gloves<br>$47.743</center></h3>
+</div>
+
+ <div class="twentyeight"><h3><center>VIEW MORE PRODUCTS</center></h3></div>
+
+
+<div class="twentynine">
+<img src="p9.png"/>
+
+</div>
+<div class="thirty">
+<h1>Watch of Choice</h1>
+</div>
+
+
+<div class="thirtyone">
+<h3>Enim ad minim veniam, quis nostrud exercitation ullamco<br> laboris nisi ut aliquip ex ea commodo consequat.<br> Duis aute irure dolor in reprehenderit <br>in voluptate velit esse.</h3>
+</div>
+
+<div class="thirtytwo">
+<h1><center>Show Watch</center></h1>
+</div>
+
+
+<div class="thirtythree">
+<img src="p10.png"/>
+</div>
+
+<div class="thirtyfour">
+<h1>Watch of Choice</h1>
+</div>
+
+<div class="thirtyfive">
+<h3>Enim ad minim veniam, quis nostrud exercitation ullamco<br> laboris nisi ut aliquip ex ea commodo consequat.<br> Duis aute irure dolor in reprehenderit<br> in voluptate velit esse.</h3>
+</div>
+
+<div class="thirtysix">
+<h1></h1>Show Watch</div>
+
+<div class="thirtyseven">
+<img src="img/p12.png"/></div>
+
+<div class="thirtyeight">
+<h1>Free Shipping Method</h1>
+</div>
+
+<div class="thirtynine">
+<h2>aorem ixpsacdolor sit ameasecur<br> adipisicing elitsf edasd</h2></div>
+
+<div class="forty">
+<img src="img/b13.png"/></div>
+
+<div class="fortyone">
+<h1>Secure Payment System</h1></div>
+
+<div class="fortytwo">
+<h2>aorem ixpsacdolor sit ameasecur<br> adipisicing elitsf edasd.</h2></div>
+
+
+<div class="fortythree">
+<img src="img/b16.png"/></div>
+
+<div class="fortyfour">
+<h1>Secure Payment System</h1></div>
+
+<div class="fortyfive">
+<h2>aorem ixpsacdolor sit ameasecur<br> adipisicing elitsf edasd.</h2></div>
+
+<div class="fortysix">
+<a href="#" class="logo">
+<span class="Time">Time</span><span class="Zone">Zone</span>
+</a></div>
+
+
+<div class="fortyseven">
+<h2>Asorem ipsum adipolor sdit amet,<br> consectetur adipisicing elitcf<br> sed do eiusmod tem</h2></div>
+
+<div class="fortyeight">
+<h1>Quick Links</h1>
+
+<ul>
+<li><a href="#">About</a></li>
+<li><a href="#">Offers & Discounts</a></li>
+<li><a href="#">Get Coupon</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>
+
+<div class="fortynine">
+<h1>New Products</h1>
+
+<ul>
+<li><a href="#">Woman Cloth</a></li>
+<li><a href="#">Fashion Accessories</a></li>
+<li><a href="#">Man Accessories</a></li>
+<li><a href="#">Rubber made Toys</a></li>
+</ul></div>
+
+<div class="fifty">
+<h1>Support</h1>
+
+<ul>
+<li><a href="#">Frequently Asked Questions</a></li>
+<li><a href="#">Terms & Conditions</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Report a Payment Issue</a></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

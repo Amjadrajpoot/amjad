@@ -1,0 +1,909 @@
+<html>
+<head>
+<tittle>
+
+</tittle>
+<style>
+
+
+.main{
+background-color:white;
+width:100%;
+height:400%;
+
+
+}
+.navbar {
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+span.Time { color: black;
+}
+
+span.Zone { color: red;
+}
+
+
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff2020;
+}
+
+/* DROPDOWN STYLING */
+
+.dropdown-menu {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #fff;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    border: 1px solid #ff2020;   
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;  
+    transition: 0.3s;
+}
+
+/* Hover effect inside dropdown */
+
+.dropdown-menu li:hover {
+    background-color: #ff2020;
+}
+
+.dropdown-menu li:hover a {
+    color: #fff;
+    padding-left: 5px;
+}
+
+/* Show dropdown on hover */
+
+.nav-item:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+.one{
+position:absolute;
+background-color:transparent;
+font-family:Arial Unicode MS;
+top:150px;
+left:580px;
+color:black;
+font-size:17px;
+height:90px;
+width:400px;
+}
+
+.two{
+background-color:transparent;
+position:absolute;
+width:450px;
+height:303px;
+left:50px;
+overflow:hidden;
+top:500px;
+}
+
+.two img{
+width:450px;
+height:300px;
+}
+
+.two1{
+background-color:red;
+width:450px;
+height:60px;
+position:absolute;
+top:400px;
+}
+
+.two1 p{
+line-height:15px;
+color:white;
+font-size:20px;
+text-align:center;
+}
+
+.two:hover .two1{
+position:absolute;
+top:250px;
+transition:0.5s;
+}
+
+.three{
+font-family:Arial Unicode MS;
+width:450px;
+height:100px;
+background-color:transparent;
+position:absolute;
+top:800px;
+left:30px;
+}
+
+
+.four{
+background-color:transparent;
+position:absolute;
+width:450px;
+height:303px;
+left:550px;
+overflow:hidden;
+top:500px;
+}
+
+.four img{
+width:450px;
+height:300px;
+}
+
+.four2{
+background-color:red;
+width:450px;
+height:60px;
+position:absolute;
+top:400px;
+}
+
+.four2 p{
+line-height:15px;
+color:white;
+font-size:20px;
+text-align:center;
+}
+
+.four:hover .four2{
+position:absolute;
+top:250px;
+transition:0.5s;
+}
+
+.five{
+font-family:Arial Unicode MS;
+width:450px;
+height:100px;
+background-color:transparent;
+position:absolute;
+top:800px;
+left:480px;
+}
+
+
+.six{
+background-color:transparent;
+position:absolute;
+width:450px;
+height:303px;
+left:1040px;
+overflow:hidden;
+top:500px;
+}
+
+.six img{
+width:450px;
+height:300px;
+}
+
+.six3{
+background-color:red;
+width:450px;
+height:60px;
+position:absolute;
+top:400px;
+}
+
+.six3 p{
+line-height:15px;
+color:white;
+font-size:20px;
+text-align:center;
+}
+
+.six:hover .six3{
+position:absolute;
+top:250px;
+transition:0.5s;
+}
+
+.seven{
+font-family:Arial Unicode MS;
+width:450px;
+height:100px;
+background-color:transparent;
+position:absolute;
+top:800px;
+left:980px;
+}
+
+.eight{
+background-color:transparent;
+position:absolute;
+width:450px;
+height:303px;
+top:1000px;
+left:50px;
+overflow:hidden;
+}
+
+.eight img{
+width:450px;
+height:300px;
+}
+
+.eight4{
+background-color:red;
+width:450px;
+height:60px;
+position:absolute;
+top:300px;
+
+}
+
+.eight4 p{
+line-height:15px;
+color:white;
+font-size:20px;
+text-align:center;
+
+}
+
+.eight:hover .eight4{
+position:absolute;
+top:250px;
+transition:0.5s;
+}
+
+.nine{
+font-family:Arial Unicode MS;
+width:450px;
+height:100px; 
+background-color:transparent;
+position:absolute;
+top:1300px;
+left:50px;
+}
+
+.ten{
+background-color:transparent;
+position:absolute;
+width:450px;
+height:303px;
+top:1000px;
+left:550px;
+overflow:hidden;
+}
+
+.ten img{
+width:450px;
+height:300px;
+}
+
+.ten5{
+background-color:red;
+width:450px;
+height:60px;
+position:absolute;
+top:300px;
+
+}
+
+.ten5 p{
+line-height:15px;
+color:white;
+font-size:20px;
+text-align:center;
+
+}
+
+.ten:hover .ten5{
+position:absolute;
+top:250px;
+transition:0.5s;
+}
+
+
+.eleven{
+font-family:Arial Unicode MS;
+width:450px;
+height:100px; 
+background-color:transparent;
+position:absolute;
+top:1300px;
+left:550px;
+}
+
+
+.twelve{
+background-color:transparent;
+position:absolute;
+width:450px;
+height:303px;
+top:1000px;
+left:1050px;
+overflow:hidden;
+}
+
+.twelve img{
+width:450px;
+height:300px;
+}
+
+.twelve7{
+background-color:red;
+width:450px;
+height:60px;
+position:absolute;
+top:300px;
+
+}
+
+.twelve7 p{
+line-height:15px;
+color:white;
+font-size:20px;
+text-align:center;
+
+}
+
+.twelve:hover .twelve7{
+position:absolute;
+top:250px;
+transition:0.5s;
+}
+
+
+.thirteen{
+font-family:Arial Unicode MS;
+width:450px;
+height:100px; 
+background-color:transparent;
+position:absolute;
+top:1300px;
+left:1050px;
+}
+
+.fourteen{
+background:red;
+position:absolute;
+width:1400px;
+height:400px;
+left:80px;
+top:1500;
+}
+
+.fifteen{
+background-color:transparent;
+position:absolute;
+width:50px;
+height:100px;
+top:40px;
+left:150px;
+
+}
+
+.fifteen img{
+width:95px;
+height:100px;
+}
+
+
+.sixteen{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:170px;
+left:70px;
+}
+
+
+.seventeen{
+font-family:Arial Unicode MS;
+font-size:16px;
+position:absolute;
+top:230px;
+left:30px;
+}
+
+.Eighteen{
+background-color:transparent;
+position:absolute;
+width:50px;
+height:100px;
+top:40px;
+left:600px;
+
+}
+
+.Eighteen img{
+width:95px;
+height:100px;
+}
+
+
+.nineteen{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:160px;
+left:510px;
+}
+
+.twenty{
+font-family:Arial Unicode MS;
+font-size:16px;
+position:absolute;
+top:220px;
+left:510px;
+}
+
+.twentyone{
+background-color:transparent;
+position:absolute;
+width:50px;
+height:100px;
+top:40px;
+left:1050px;
+
+}
+
+.twentyone img{
+width:95px;
+height:100px;
+}
+
+.twentytwo{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:160px;
+left:1020px;
+}
+
+.twentythree{
+font-family:Arial Unicode MS;
+font-size:16px;
+position:absolute;
+top:220px;
+left:1010px;
+}
+
+
+.twentyfour {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+	position:absolute;
+	top:2000px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+	
+}
+
+span.Time { color: black;
+}
+
+span.Zone { color: red;
+}
+
+
+.twentyfive{
+font-family:Arial Unicode MS;
+font-size:13px;
+position:absolute;
+top:2060px;
+left:50px;
+}
+
+.twentysix{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:2000px;
+left:480px;
+background-color:white;
+height:300px;
+}
+
+.twentysix ul{
+
+}
+
+.twentysix ul li{
+list-style-type:none;
+
+}
+
+.twentysix ul li a{
+text-decoration:none;
+color:Black;
+font-size:15px;
+}
+
+.twentysix ul li a:hover{
+color:red;
+margin-left:5px;
+transition:1s;
+}
+
+.twentyseven{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:2000px;
+left:790px;
+background-color:white;
+height:300px;
+}
+
+.twentyseven ul{
+
+}
+
+.twentyseven ul li{
+list-style-type:none;
+
+}
+
+.twentyseven ul li a{
+text-decoration:none;
+color:Black;
+font-size:15px;
+}
+
+.twentyseven ul li a:hover{
+color:red;
+margin-left:5px;
+transition:1s;
+}
+
+
+
+.twentyeight{
+font-family:Arial Black;
+font-size:13px;
+position:absolute;
+top:2000px;
+left:1160px;
+background-color:white;
+height:300px;
+}
+
+.twentyeight ul{
+
+}
+
+.twentyeight ul li{
+list-style-type:none;
+
+}
+
+.twentyeight ul li a{
+text-decoration:none;
+color:Black;
+font-size:15px;
+}
+
+.twentyeight ul li a:hover{
+color:red;
+margin-left:5px;
+transition:1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<div class=main>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#" class="logo">
+		<span class="Time">Time</span><span class="Zone">Zone</span>
+		</a>
+
+        <ul class="nav-menu">
+
+            <li class="nav-item">
+                <a href="1web.html" class="nav-link">Home</a>
+                
+            </li>
+
+            <li class="nav-item">
+                <a href="web time zone.html" class="nav-link">Shop</a>
+                
+            </li>
+
+            <li class="nav-item">
+                <a href="web3.html" class="nav-link">About</a>
+                
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">Blog</a>
+                <ul class="dropdown-menu">
+                    <li><a href="web4.html">Blog </a></li>
+                    <li><a href="web5.html">Blog Details</a></li>
+                    
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a href="web6.html" class="nav-link">Contact</a>
+               
+            </li>
+
+        </ul>
+    </div>
+	
+<div class="one">
+<h1><center>Watch Shop</center></h1></div>
+
+
+<div class="two">
+<img src="p1.png"/>
+
+<div class="two1">
+<p>Add to cart</p>
+</div>
+
+</div>
+
+<div class="three">
+<h3><center>Thermo Ball Etip Gloves<br>$47.743</center></h3>
+</div>
+
+<div class="four">
+<img src="p2.png"/>
+
+<div class="four2">
+<p>Add to Cart</p>
+</div>
+</div>
+<div class="five">
+<h3><center>Thermo Ball Etip Gloves<br>$47.743</center></h3>
+</div>
+
+<div class="six">
+<img src="p4.png"/>
+
+<div class="six3">
+<p>Add to Cart</p>
+</div>
+</div>
+
+<div class="seven">
+<h3><center>Thermo Ball Etip Gloves<br>$47.743</center></h3>
+</div>
+
+<div class="eight">
+<img src="p5.png"/>
+
+<div class="eight4">
+<p>Add to Cart</p>
+</div>
+</div>
+
+<div class="nine">
+<h3><center>Thermo Ball Etip Gloves<br>$47.743</center></h3>
+</div>
+
+<div class="ten">
+<img src="p6.png"/>
+
+<div class="ten5">
+<p>Add to Cart</p>
+</div>
+</div>
+
+<div class="eleven">
+<h3><center>Thermo Ball Etip Gloves<br>$47.743</center></h3>
+</div>
+
+
+<div class="twelve">
+<img src="p7.png"/>
+
+<div class="twelve7">
+<p>Add to Cart </p>
+</div>
+</div>
+
+
+
+<div class="thirteen">
+<h3><center>Thermo Ball Etip Gloves<br>$47.743</center></h3>
+</div>
+
+<div class="fourteen">
+<div class="fifteen">
+<img src="img/p12.png"/></div>
+
+<div class="sixteen">
+<h1>Free Shipping Method</h1></div>
+
+<div class="seventeen">
+<h2>aorem ixpsacdolor sit ameasecur<br> adipisicing elitsf edasd.</h2></div>
+
+
+<div class="Eighteen">
+<img src="img/b13.png"/></div>
+
+<div class="nineteen">
+<h1>Secure Payment System</h1></div>
+
+<div class="twenty">
+<h2>aorem ixpsacdolor sit ameasecur<br> adipisicing elitsf edasd</h2></div>
+
+
+<div class="twentyone">
+<img src="img/b16.png"/></div>
+
+
+<div class="twentytwo">
+<h1>Secure Payment System</h1></div>
+
+<div class="twentythree">
+<h2>aorem ixpsacdolor sit ameasecur <br>adipisicing elitsf edasd</h2></div>
+
+</div>
+
+
+<div class="twentyfour">
+<a href="#" class="logo">
+<span class="Time">Time</span><span class="Zone">Zone</span>
+</a>
+</div>
+
+<div class="twentyfive">
+<h2>Asorem ipsum adipolor sdit amet,<br> consectetur adipisicing elitcf<br> sed do eiusmod tem</h2></div>
+
+
+<div class="twentysix">
+<h1>Quick Links</h1>
+
+<ul>
+<li><a href="#">About</a></li>
+<li><a href="#">Offers & Discounts</a></li>
+<li><a href="#">Get Coupon</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>
+
+
+<div class="twentyseven">
+<h1>New Products</h1>
+
+<ul>
+<li><a href="#">Woman Cloth</a></li>
+<li><a href="#">Fashion Accessories</a></li>
+<li><a href="#">Man Accessories</a></li>
+<li><a href="#">Rubber made Toys</a></li>
+</ul>
+</div>
+
+
+<div class="twentyeight">
+<h1>Support</h1>
+
+<ul>
+<li><a href="#">Frequently Asked Questions</a></li>
+<li><a href="#">Terms & Conditions</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Report a Payment Issue</a></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

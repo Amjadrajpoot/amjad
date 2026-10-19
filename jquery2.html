@@ -1,0 +1,66 @@
+<html>
+<head>
+<tittle> </tittle>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<style>
+
+.three{background-color:red;width:100px;height:100px;left:100px;top:50px;}
+
+
+
+</style>
+<body>
+<div class="three"></div>
+<button class="btn1">slideDown</button>
+<button class="btq2">slideUp</button>
+<button class="bta3">slideToggle</button>
+<button class="bta4">slideTo</button>
+
+
+
+
+<script>
+
+
+$(document).ready(function(){
+$(".btn1").click(function(){
+$(".three").slideDown();
+});
+
+$(".btq2").click(function(){
+$(".three").slideUp();
+});
+
+$(".bta3").click(function(){
+$(".three").slideToggle();
+});
+
+$(".bta4").click(function(){
+$(".three").slideTo();
+});
+
+
+
+
+});
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
